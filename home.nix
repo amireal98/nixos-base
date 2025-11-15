@@ -8,6 +8,7 @@
  programs.bash = {
   enable = true;
   shellAliases = {
+   n = "neovim";
    btw = "echo I use NixOS, btw";
    l = "ls -l";
   };

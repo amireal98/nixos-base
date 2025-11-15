@@ -9,7 +9,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos-btw";
+  networking.hostName = "meow";
   networking.networkmanager.enable = true;
 
   time.timeZone = "America/Mexico_City";
@@ -18,9 +18,7 @@
    enable = true;
    xwayland.enable = true;
   };
-
   services.displayManager.ly.enable = true;
-
   services.libinput.enable = true;
 
   users.users.amireal = {
@@ -34,7 +32,7 @@
   programs.firefox.enable = true;
 
   environment.systemPackages = with pkgs; [
-   vim
+   neovim
    wget
    nitch
    fastfetch

@@ -8,7 +8,7 @@
   };
  };
  outputs = { self, nixpkgs, home-manager, ... }: {
-  nixosConfigurations.nixos-btw = nixpkgs.lib.nixosSystem {
+  nixosConfigurations.meow = nixpkgs.lib.nixosSystem {
    system = "x86_64-linux";
    modules = [
     ./configuration.nix
